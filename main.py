@@ -18,3 +18,25 @@ print(sq)
 
 # Run unit tests automatically
 main(module='test_module', exit=False)
+
+
+def test_get_amount_inside(self):
+    self.rect.set_height(10)
+    self.rect.set_width(15)
+    actual = self.rect.get_amount_inside(self.sq)
+    expected = 6
+    self.assertEqual(actual, expected, 'Expected `get_amount_inside` to return 6.')
+
+
+def test_get_amount_inside_two_rectangles(self):
+    rect2 = shape_calculator.Rectangle(4, 8)
+    actual = rect2.get_amount_inside(self.rect)
+    expected = 1
+    self.assertEqual(actual, expected, 'Expected `get_amount_inside` to return 1.')
+
+
+def test_get_amount_inside_none(self):
+    rect2 = shape_calculator.Rectangle(2, 3)
+    actual = rect2.get_amount_inside(self.rect)
+    expected = 0
+    self.assertEqual(actual, expected, 'Expected `get_amount_inside` to return 0.')
