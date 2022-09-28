@@ -53,27 +53,6 @@ class Square(Rectangle):
        self.width = new_side
        self.height = new_side
 
-    def set_width(self, new_side):
-        self.width = new_side
-        self.height = new_side
-
-    def set_height(self, new_side):
-        set.width = new_side
-        set.height = new_side
 
 
-#Rectangle
-# rec1 = Rectangle(4,7)
 
-# print(rec1.get_picture())
-
-#squ1 = Square(51)
-#print(squ1.get_picture())
-
-#print(squ1.get_area())
-#print(squ1)
-#squ1.set_side(2)
-#print(squ1)
-#print(squ1.get_area())
-#print(squ1.get_picture())
-#print(squ1.get_diagonal())
